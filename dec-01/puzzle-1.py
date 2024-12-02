@@ -9,10 +9,11 @@ for text in lines:
     list1.append(a)
     list2.append(b)
 
+# Sort 2 lists
 list1.sort()
 list2.sort()
 
-# Calculate distance
+# Calculate distance of sorted lists
 distance = 0
 for x in range(len(list2)):
     distance += abs(list2[x] - list1[x])

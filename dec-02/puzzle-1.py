@@ -17,6 +17,9 @@ reports = []
 for text in lines:
     reports.append([int(x) for x in text.split(" ")])
 
+# Check each report fulfils the given conditions by comparing adjacent elements in each report
+# Based on the comparison, identify whether the difference condition is met and type of the list (increment/decrement)
+# Check whether those conditions are met by all levels in a report
 total = 0
 for levels in reports:
     seq_type , is_safe = -1 , True

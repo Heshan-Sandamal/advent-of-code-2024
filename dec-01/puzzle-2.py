@@ -1,6 +1,8 @@
 file = open("input.txt")
 lines = file.read().splitlines()
 
+# Since the right list needs to keep track for the occurrence of each element, used a map instead of list
+# Populated it when reading the element with number of occurrences
 total = 0
 list1 , map2 = [] , {}
 for text in lines:

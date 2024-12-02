@@ -44,6 +44,10 @@ reports = []
 for text in lines:
     reports.append([int(x) for x in text.split(" ")])
 
+# I'm using the brute force approach since the lists are short
+# Check the conditions are met like in puzzle-1
+# If not get all permutations of lists by removing each element at once
+# Check above conditions are met of at least one permutation
 total = 0
 for levels in reports:
     is_safe = check_report(levels, -1)
