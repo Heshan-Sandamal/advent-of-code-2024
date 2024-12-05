@@ -49,8 +49,8 @@ for update in updates:
         invalid_list.append(update)
 
 # For each page in a particular update, check the created val_map that consists of items which should come before and after that item
-# If the item in left side is in the after list, switch the two elements and restart
-# If the item in right side is in the before list, switch the two elements and restart
+# If the item in left side is not in the before list, switch the two elements and restart
+# If the item in right side is not in the after list, switch the two elements and restart
 total, index = 0, 0
 while (index < len(invalid_list)):
     update = invalid_list[index]
