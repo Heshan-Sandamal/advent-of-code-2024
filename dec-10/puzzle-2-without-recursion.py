@@ -16,6 +16,9 @@ DIRECTIONS = [(-1, 0), (0, 1), (1, 0), (0, -1)]  # North, East, South, West
 steps = [str(x) for x in range(10)]
 
 
+# Simulated the recursion behavior using stack (For this solution even recursion works, but for larger ones it might not work)
+# For a particular location try to move in four directions if next cell value is in the sequence order
+# If next cell value is 9 then increment paths count (both next value and next step should be 9)
 def get_paths_iterative(start_x, start_y):
     stack = [(start_x, start_y)]  # Stack to keep track of current position
     paths = 0
